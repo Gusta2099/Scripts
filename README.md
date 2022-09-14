@@ -1,2 +1,4 @@
 # Scripts
- Teste pro trabalho em duplas
+Trabalho do multiplayer local
+
+Gustavo Tavares Felix e Eduardo Pamplona.
