@@ -22,7 +22,6 @@ public class tiroPlayer2 : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             Instantiate(tiro, Tiroposicao.position, transform.rotation);
-            Destroy(tiro.gameObject, 10f);
         }
     }
 }

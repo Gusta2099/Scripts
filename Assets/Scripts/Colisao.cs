@@ -5,22 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Colisao : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string Cena;
 
-    private void OnCollisionEnter(Collision collision){
-        if(collision.collider.tag == "Player"){
-            Debug.Log("Acertou");
-            
+    void OnTriggerEnter(Collider fase) {
+        if (fase.gameObject.tag == "Player") {
+            MudarCena();
         }
+    }
+    public void MudarCena()
+    {
+        SceneManager.LoadScene(Cena);
+    }
+    public void Sair(){
+        Application.Quit();
     }
 }
